@@ -12,4 +12,11 @@ for i in sorted(l):
                 print(i, j+1)
                 break
 
+#ex:
+"""5
+apple
+banana
+apple
+cherry
+banana"""
 
