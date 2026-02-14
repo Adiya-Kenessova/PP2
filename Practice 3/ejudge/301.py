@@ -14,3 +14,4 @@ def if_valid(a):
 
 n = int(input())
 if_valid(n)
+
