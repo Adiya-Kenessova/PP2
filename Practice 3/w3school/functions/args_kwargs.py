@@ -1,6 +1,6 @@
 #*args and **kwargs allow functions to accept a unknown number of arguments.
 
-''If you do not know how many arguments will be passed into your function, add a * before the parameter name.
+'''If you do not know how many arguments will be passed into your function, add a * before the parameter name.
 This way, the function will receive a tuple of arguments and can access the items accordingly:
 Using *args to accept any number of arguments:'''
 
