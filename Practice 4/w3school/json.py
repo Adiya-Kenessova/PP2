@@ -18,7 +18,7 @@ x = {
   "age": 30,
   "city": "New York"
 }
-y = json.dumps(x)                                          #py->jsin: dumps
+y = json.dumps(x)                                          #py->json: dumps
 # the result is a JSON string:
 print(y)    #{"name": "John", "age": 30, "city": "New York"}
 
