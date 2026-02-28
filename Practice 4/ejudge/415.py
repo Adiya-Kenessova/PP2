@@ -1,7 +1,7 @@
 from datetime import datetime, timedelta
 
 def parse(line):
-    date_part, tz_part = line.split()
+    date_part, tz_part = line.split()                        #2006-02-28 UTC+05:00
     y, m, d = map(int, date_part.split("-"))
     sign = 1 if tz_part[3] == '+' else -1
     hh, mm = map(int, tz_part[4:].split(":"))
@@ -29,4 +29,5 @@ t = (cand - cur_utc).total_seconds()
 if t < 0:
     print(0)
 else:
+
     print(int((t + 86399) // 86400))
