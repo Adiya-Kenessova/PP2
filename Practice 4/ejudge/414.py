@@ -11,7 +11,8 @@ def get_utc(a):
 
     date = datetime.strptime(date, "%Y-%m-%d") #string → parse → time
 
-    if tz[3] == '+':
+    if tz[3] == '+':                                                   #date = "2024-02-01"
+                                                                        #tz = "UTC+05:00"
         sign = 1
     else:
         sign = -1
@@ -29,5 +30,6 @@ seconds = abs((time1 - time2).total_seconds())
 days = int(seconds // 86400)
 
 print(days)
+
 
 
