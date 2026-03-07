@@ -3,7 +3,7 @@ import json
 
 with open("raw.txt", "r", encoding="utf-8") as f:
     text = f.read()
-
+#18.04.2019 11:13:58
 datetime_match = re.search(r"Время:\s*(\d{2}\.\d{2}\.\d{4})\s+(\d{2}:\d{2}:\d{2})", text)
 date = datetime_match.group(1) if datetime_match else None
 time = datetime_match.group(2) if datetime_match else None
@@ -11,7 +11,7 @@ time = datetime_match.group(2) if datetime_match else None
 payment_match = re.search(r"(Банковская карта|Наличные):\s*([\d\s]+,\d{2})", text)
 payment_method = payment_match.group(1) if payment_match else "Не указан"
 
-total_match = re.search(r"ИТОГО:\s*([\d\s]+,\d{2})", text)
+total_match = re.search(r"ИТОГО:\s*([\d\s]+,\d{2})", text)  #ИТОГО: 18 009,00
 total_str = total_match.group(1) if total_match else "0,00"
 
 product_pattern = re.findall(
