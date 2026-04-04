@@ -1,12 +1,12 @@
 # connect.py
 import psycopg2
 
-def get_conn():
+def connect():
     try:
         conn = psycopg2.connect(
             host="localhost",
-            database="phonebook",
-            user="Adiya",
+            database="phonebook_db",
+            user="postgres",
             password="5432",
             port="5432"
         )
