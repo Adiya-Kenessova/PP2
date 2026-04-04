@@ -1,0 +1,7 @@
+parameters = {
+    "database": "phonebbok_db",
+    "user": "postgres",
+    "password": "5432",
+    "host": "localhost",
+    "port": "5432"
+}
