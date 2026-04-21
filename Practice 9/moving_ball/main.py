@@ -18,7 +18,7 @@ while running:
         if event.type == pygame.QUIT:
             running = False
 
-        keys = pygame.key.get_pressed()
+    keys = pygame.key.get_pressed()
     if keys[pygame.K_LEFT]:
         ball.move_left()
     if keys[pygame.K_RIGHT]:
