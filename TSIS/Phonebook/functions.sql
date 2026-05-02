@@ -1,14 +1,13 @@
--- Groups table: each contact belongs to one group
+
 CREATE TABLE IF NOT EXISTS groups (
     id   SERIAL PRIMARY KEY,
     name VARCHAR(50) UNIQUE NOT NULL
 );
 
--- Insert default groups
 INSERT INTO groups (name) VALUES ('Family'), ('Work'), ('Friend'), ('Other')
 ON CONFLICT DO NOTHING;
 
--- Main contacts table 
+--Main contacts table 
 CREATE TABLE IF NOT EXISTS contacts (
     id         SERIAL PRIMARY KEY,
     username   VARCHAR(50) UNIQUE NOT NULL,
